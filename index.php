@@ -11,7 +11,7 @@
 			<h3>Check out the internship company: <a href="https://zuri.team" target="_blank">Zuri</a></h3>
 			<h1 class="h1-responsive font-weight-bold">Resume</h1>
 			<h2 class="h2-responsive">Overview</h2>
-			<p>My name is Adetunji Adeyinka.<br> I am a Nigerian.<br> I am a 16-years-old developer with 3 years of experience.<br> I can:<br> - use HTML, CSS and Javascrpt for the frontend.<br> - use Frameworks (Bootstrap, W3CSS, JQuery) for fast development.<br> - use PHP and Python for the backend.<br> - use Flutter (a little) for building mobile apps.<br> - use MySQL for database management.<br> - use Heroku for DevOps, deployment and cloud computing. <br> - use Git/GitHub for efficient code management, code contribution and to set up continuous integration and development.<br> - use postman for testing APIs.<br> - build and use REST APIs.<br> <br> I also possess:<br> - fast learning abilities.<br> - team playing qualities ( currently the Labour Prefect of my high school (Caleb International College)).<br> - cyber security skills. <br> - keynote speaking qualities.<br> I was also the Head Boy for my primary school (The Pathway Schhol). <br> I have been the leader/ assistant for various projects.<br> I want to be the Elon Musk of Nigeria.
+			<p>My name is <p id="my_name"></p>.<br> I am a Nigerian.<br> I am a 16-years-old developer with 3 years of experience.<br> I can:<br> - use HTML, CSS and Javascrpt for the frontend.<br> - use Frameworks (Bootstrap, W3CSS, JQuery) for fast development.<br> - use PHP and Python for the backend.<br> - use Flutter (a little) for building mobile apps.<br> - use MySQL for database management.<br> - use Heroku for DevOps, deployment and cloud computing. <br> - use Git/GitHub for efficient code management, code contribution and to set up continuous integration and development.<br> - use postman for testing APIs.<br> - build and use REST APIs.<br> <br> I also possess:<br> - fast learning abilities.<br> - team playing qualities ( currently the Labour Prefect of my high school (Caleb International College)).<br> - cyber security skills. <br> - keynote speaking qualities.<br> I was also the Head Boy for my primary school (The Pathway Schhol). <br> I have been the leader/ assistant for various projects.<br> I want to be the Elon Musk of Nigeria.
 			</p><br>
 			<h2 class="h1-responsive font-weight-bold">Educational History</h2>
 			<h3 class="h3-responsive">2006-2015 | The Pathway School</h3>
@@ -74,4 +74,7 @@
 </body>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+	<script>
+		document.getElementById("my_name").innerHTML = "Adetunji Adeyinka";
+	</script>
 </html>
