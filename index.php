@@ -64,7 +64,7 @@
 		                </div>
 		            </form>
 		            <div class="text-center text-md-left">
-		                <a class="btn btn-primary" name="submit">Send Message</a>
+		                <a class="btn btn-primary" name="submit" type="submit">Send Message</a>
 		            </div>
 		            <div class="status"></div>
 		        </div>
