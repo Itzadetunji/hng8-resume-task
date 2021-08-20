@@ -63,10 +63,10 @@
 		                        </div>
 		                    </div>
 		                </div>
+		                <div class="text-center text-md-left">
+		                	<button class="btn btn-primary" name="submit" type="submit">Send Message</button>
+		            	</div>
 		            </form>
-		            <div class="text-center text-md-left">
-		                <button class="btn btn-primary" name="submit" type="submit">Send Message</button>
-		            </div>
 		            <div class="status"></div>
 		        </div>
 		    </div>
