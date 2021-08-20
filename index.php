@@ -31,7 +31,7 @@
 	    <p class="text-center w-responsive mx-auto mb-5">Send Me An E-mail.
 		    <div class="row">
 		        <div class="col-md-12 mb-md-0 mb-5">
-		            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+		            <form id="contact-form" name="sentMessage" action="mail.php" method="POST">
 		                <div class="row">
 		                    <div class="col-md-6">
 		                        <div class="md-form mb-0">
@@ -64,7 +64,7 @@
 		                </div>
 		            </form>
 		            <div class="text-center text-md-left">
-		                <a class="btn btn-primary" onclick="validateForm();">Send Message</a>
+		                <a class="btn btn-primary" name="submit">Send Message</a>
 		            </div>
 		            <div class="status"></div>
 		        </div>

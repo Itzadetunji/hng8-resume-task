@@ -1,34 +1,16 @@
 <?php
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$message = $_POST['message'];
-	$subject = $_POST['subject'];
-	header('Content-Type: application/json');
-	if ($name === ''){
-	print json_encode(array('message' => 'Name cannot be empty', 'code' => 0));
-	exit();
-	}
-	if ($email === ''){
-	print json_encode(array('message' => 'Email cannot be empty', 'code' => 0));
-	exit();
-	} else {
-	if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
-	print json_encode(array('message' => 'Email format is invalid.', 'code' => 0));
-	exit();
-	}
-	}
-	if ($subject === ''){
-	print json_encode(array('message' => 'Subject cannot be empty', 'code' => 0));
-	exit();
-	}
-	if ($message === ''){
-	print json_encode(array('message' => 'Your message cannot be empty', 'code' => 0));
-	exit();
-	}
-	$content="From: $name \nEmail: $email \nMessage: $message";
-	$recipient = "adetunjiadeyinka29@gmail.com";
-	$mailheader = "From: $email \r\n";
-	mail($recipient, $subject, $content, $mailheader) or die("Error!");
-	print json_encode(array('message' => 'Email has been sent successfully!', 'code' => 1));
-	exit();
+// Check for empty fields
+$name = $_POST['name'];
+$subject = $_POST['subject'];
+$email_address = $_POST['email'];
+$message = $_POST['message'];
+	
+// Create the email and send the message
+$to = 'adetunjiadeyinka29@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+$email_subject = "Website ".$subject.":  $name";
+$email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nMessage:\n$message";
+$headers = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
+$headers .= "Reply-To: $email_address";	
+mail($to,$email_subject,$email_body,$headers);
+header("Location: index.php?mailsent");
 ?>
