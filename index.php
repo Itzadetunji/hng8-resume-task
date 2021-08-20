@@ -74,31 +74,4 @@
 </body>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
-	<script type="text/javascript">
-		document.getElementById('status').innerHTML = "Sending...";
-			formData = {
-			'name'     : $('input[name=name]').val(),
-			'email'    : $('input[name=email]').val(),
-			'subject'  : $('input[name=subject]').val(),
-			'message'  : $('textarea[name=message]').val()
-			};
-
-			//Ajax
-			$.ajax({
-			url : "mail.php",
-			type: "POST",
-			data : formData,
-			success: function(data, textStatus, jqXHR)
-			{
-
-			$('#status').text(data.message);
-			if (data.code) //If the e-mail was sent successfully, reset the form.
-			$('#contact-form').closest('form').find("input[type=text], textarea").val("");
-			},
-			error: function (jqXHR, textStatus, errorThrown)
-			{
-			$('#status').text(jqXHR);
-			}
-			});
-	</script>
 </html>
