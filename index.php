@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
 </head>
 <body>
 	<div class="container">
@@ -72,8 +72,8 @@
 		</section>
 	</div>
 </body>
-	<script type="text/javascript" src="jquery.min.js"></script>
-	<script type="text/javascript" src="bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript">
 		document.getElementById('status').innerHTML = "Sending...";
 			formData = {
